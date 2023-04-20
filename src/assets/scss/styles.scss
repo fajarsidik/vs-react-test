@@ -1,0 +1,102 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app{
+    width: 1100px;
+    height: 700px;
+    margin: 5% auto;
+    h3{
+        margin-top: 20px;
+    }
+}
+.avatar{
+    &-group{
+        display: flex;
+        position: relative;
+        &.xs{     
+            .avatar-item{
+                margin-left: -8x;
+                img{
+                    width: 24px;
+                    height: 24px;                                 
+                }
+                &.max-length,
+                &.initial-name{
+                    width: 24px;
+                    height: 24px;
+                }                
+            }             
+        }
+
+        &.sm{     
+            .avatar-item{
+                margin-left: -10px;
+                img{
+                    width: 32px;
+                    height: 32px;                                 
+                }
+                &.max-length,
+                &.initial-name{
+                    width: 32px;
+                    height: 32px;
+                }                
+            }             
+        }
+
+        &.md{     
+            .avatar-item{
+                margin-left: -20px;
+                img{
+                    width: 64px;
+                    height: 64px;                                 
+                }
+                &.max-length,
+                &.initial-name{
+                    width: 64px;
+                    height: 64px;
+                }                
+            }             
+        }
+
+        &.lg{     
+            .avatar-item{
+                margin-left: -30px;
+                img{
+                    width: 96px;
+                    height: 96px;                                 
+                }
+                &.max-length,
+                &.initial-name{
+                    width: 96px;
+                    height: 96px;
+                }                
+            }             
+        }
+        .avatar-item{            
+            img{
+                border: 2px solid #fff;
+                object-fit: cover;   
+                border-radius: 50%;   
+            }
+            &.max-length,
+            &.initial-name{
+                justify-content: center;
+                align-items: center;
+                background-color: dimgray;
+                display: inline-flex;
+                border-radius: 50%;
+                border: 2px solid #fff
+            }
+            &.initial-name{
+                background-color:rosybrown;
+            }
+            span{               
+                color: #fff;
+                font-size: 12px;                
+            }
+        }
+        
+    }
+
+    
+}

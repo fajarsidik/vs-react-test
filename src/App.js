@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import AvatarGroup from './components/avatar-group'
+import {dataUser,dataUserName} from './constant/data-user'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h3>Default AvatarGroup</h3>
+      <AvatarGroup data={dataUser} />
+      <h3>Size AvatarGroup Max Length</h3>
+      <AvatarGroup data={dataUser} maxLength={2} size={'sm'} />
+      <h3>Size AvatarGroup xs</h3>
+      <AvatarGroup data={dataUser} size={'xs'} />
+      <h3>Size AvatarGroup sm</h3>
+      <AvatarGroup data={dataUser} size={'sm'} />
+      <h3>Size AvatarGroup md</h3>
+      <AvatarGroup data={dataUser} size={'md'} />
+      <h3>Size AvatarGroup xl</h3>
+      <AvatarGroup data={dataUser} size={'lg'} />
+      <h3>Size AvatarGroup Initial Name</h3>
+      <AvatarGroup data={dataUserName} size={'md'} />
     </div>
   );
 }
